@@ -1,0 +1,104 @@
+.clock h2{
+   text-align: center;
+   font-size: 2.5rem;
+}
+#clockContainer{
+    position: relative;
+    margin: auto;
+    background: url(white-alarm-clock-no-hands-isolated-background-130444757.webp) no-repeat;
+    height: 40vw ;
+    width: 40vw;
+    background-size: 100%;
+}
+.dot{
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    height: 2%;
+    top: 55.7%;
+    width: 2%;
+    margin-left: 48%;
+}
+
+#hour,#minute,#second{
+  position: absolute;  
+  background: black;
+  transform-origin: bottom;
+  border-radius: 10px;
+}
+#hour{
+    width: 1%;
+    height: 15%;
+    top: 41%;
+    left: 48.4%;
+    /* display: none; */
+}
+#minute{
+    width: 0.8%;
+    height: 17%;
+    top: 39.5%;
+    left: 48.5%;
+    opacity: 0.7;
+    /* display: none; */
+}
+
+#second{
+    width: 0.8%;
+    height: 20%;
+    top: 37%;
+    left: 48.5%;
+    opacity: 0.5;
+    /* display: none; */
+}
+.digitalClock{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.selectArea{
+    padding-left: 30%;
+    margin-top: 24px;
+    font-size: 1.5rem;
+}
+.selectArea select{
+    width: 15%;
+    margin:0.7em ;
+    padding: 0.6rem;
+    border: 2px solid black;
+    font-size: 1.6rem;
+}
+#btn{
+    text-align: center;
+}
+.setalarm{
+    width: 40%;
+    color:  #511c02;
+    background-color: #c8c4c3;
+    border: 2px solid rgb(112, 108, 108);
+    font-size: 1.5rem;
+    padding: 0.6em;
+}
+@media (max-width:700px){
+    .clock h2{
+        text-align: center;
+        font-size: 1rem;
+}
+.digitalClock{
+    font-size: 1rem;
+}
+.selectArea{
+    padding-left: 29.5%;
+    margin-top: 14px;
+    font-size: 1.5rem;
+}
+.selectArea select{
+    width:11%;
+    margin: 10px;
+    font-size: 0.28em;
+    padding: 0px;
+}
+.setalarm{
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 0.4em;
+}
+}
